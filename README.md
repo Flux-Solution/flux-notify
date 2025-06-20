@@ -201,6 +201,6 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 **Made with ❤️ by Flux Solutions**
 
-[🌐 fluxscripts.dev](https://fluxscripts.dev) • [⭐ Star this repo](https://github.com/flux-solutions/flux-notify) • [🐛 Report Bug](https://github.com/flux-solutions/flux-notify/issues) • [💡 Request Feature](https://github.com/flux-solutions/flux-notify/issues)
+[🌐 fluxscripts.dev](https://fluxscripts.dev) • [⭐ Star this repo](https://github.com/flux-solution/flux-notify) • [🐛 Report Bug](https://github.com/flux-solution/flux-notify/issues) • [💡 Request Feature](https://github.com/flux-solution/flux-notify/issues)
 
 </div> 
