@@ -23,13 +23,12 @@
 - ⚡ **Smooth Animations** - Fluid slide-in/out animations with easing
 - 🎯 **4 Notification Types** - Success, Error, Warning, and Info
 - 📍 **Flexible Positioning** - Place notifications in any corner of the screen
-- 🖱️ **Interactive** - Click to dismiss, hover effects, progress bars
 - 🔧 **Easy Configuration** - Simple config file with essential options
 - 📦 **Lightweight** - Optimized performance with minimal resource usage
 
 ## 🖼️ Preview
 
-![Notification Types](https://via.placeholder.com/800x400/1a1a1a/ffffff?text=Flux+Notify+Preview)
+![Notification Types](https://raw.githubusercontent.com/Flux-Solution/flux-notify/refs/heads/main/notify.png)
 
 *Modern notification system with glowing effects and smooth animations*
 
@@ -155,37 +154,23 @@ Change how long notifications stay visible:
 Config.defaultDuration = 7000  -- 7 seconds instead of 5
 ```
 
-## 🔧 Advanced Usage
-
-### From Other Resources
+## 🔧 Usage
 
 ```lua
--- In any other resource
-TriggerEvent('flux-notify:client:notify', {
-    message = 'Custom notification',
-    type = 'success',
-    title = 'My Script',
-    duration = 6000
-})
-```
+-- Success notification
+exports['flux-notify']:Success('Action completed successfully!', 'Success!')
 
-### Integration Examples
+-- Error notification  
+exports['flux-notify']:Error('Something went wrong!', 'Error!')
 
-```lua
--- ESX Integration Example
-RegisterNetEvent('esx:showNotification')
-AddEventHandler('esx:showNotification', function(msg, type)
-    local notifyType = type == 'error' and 'error' or 'info'
-    exports['flux-notify']:Notify(msg, notifyType, 'ESX')
-end)
+-- Warning notification
+exports['flux-notify']:Warning('Please check this action!', 'Warning!')
 
--- QBCore Integration Example  
-RegisterNetEvent('QBCore:Notify')
-AddEventHandler('QBCore:Notify', function(text, texttype)
-    local type = texttype == 'error' and 'error' or 
-                 texttype == 'success' and 'success' or 'info'
-    exports['flux-notify']:Notify(text, type, 'QBCore')
-end)
+-- Info notification
+exports['flux-notify']:Info('New update available!', 'Information')
+
+-- Clear all notifications
+exports['flux-notify']:Clear()
 ```
 
 ## 📋 Requirements
@@ -213,13 +198,8 @@ end)
 ## 📞 Support
 
 - **Website**: [fluxscripts.dev](https://fluxscripts.dev) - Visit our official website
-- **GitHub Issues**: [Report bugs or request features](https://github.com/flux-solutions/flux-notify/issues)
+- **GitHub Issues**: [Report bugs or request features](https://github.com/flux-solution/flux-notify/issues)
 - **Discord**: Join our community server for support
-- **Documentation**: Check our wiki for detailed guides
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🤝 Contributing
 
