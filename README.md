@@ -61,9 +61,6 @@ exports['flux-notify']:Warning('Please check this action!', 'Warning!')
 -- Info notification
 exports['flux-notify']:Info('New update available!', 'Information')
 
--- Custom notification with duration
-exports['flux-notify']:Notify('Custom message', 'success', 'Custom Title', 8000)
-
 -- Clear all notifications
 exports['flux-notify']:Clear()
 ```
@@ -152,25 +149,6 @@ Change how long notifications stay visible:
 
 ```lua
 Config.defaultDuration = 7000  -- 7 seconds instead of 5
-```
-
-## 🔧 Usage
-
-```lua
--- Success notification
-exports['flux-notify']:Success('Action completed successfully!', 'Success!')
-
--- Error notification  
-exports['flux-notify']:Error('Something went wrong!', 'Error!')
-
--- Warning notification
-exports['flux-notify']:Warning('Please check this action!', 'Warning!')
-
--- Info notification
-exports['flux-notify']:Info('New update available!', 'Information')
-
--- Clear all notifications
-exports['flux-notify']:Clear()
 ```
 
 ## 📋 Requirements
